@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <!-- ======= ======= ======= head ======= ======= ======= -->
+	<head>
+	    <link rel="stylesheet" type="text/css" href="/styles.css">
+	</head>
+  <!-- ======= ======= ======= body ======= ======= ======= -->
+	<body>
+	    <!-- ======= header ======= -->
+	    <div id="header" class="section">
+	        <p>header</p>
+	    <!-- ======= menu ======= -->
+		<div id="menu-container" class="section">
+			<%= erb :menu %>
+		</div>
+	    </div>
+	    <!-- ======= content ======= -->
+		<div id="yield-container" class="section">
+			<%= yield %>
+		</div>
+	    <!-- ======= footer ======= -->
+	    <div id="footer" class="section">
+	        <p>footer</p>
+	    </div>
+	    <!-- ======= scripts ======= -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script type="text/javascript" src="/script.js"></script>
+	</body>
+</html>

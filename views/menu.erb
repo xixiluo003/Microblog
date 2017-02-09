@@ -1,0 +1,10 @@
+<!-- ======= views/home.erb ======= -->
+<h1>menu</h1>
+<div id="menu">
+  <% @menu = ["home", "new_user", "all_user"] %>
+  <% puts "@menu: #{@menu}" %>
+  <% @menu.each do |menu_item| %>
+    <div class="menu_item"><a href="/<%= menu_item %>"><%= menu_item %></a></div>
+    <% puts "menu_item: #{menu_item}" %>
+  <% end %>
+</div>

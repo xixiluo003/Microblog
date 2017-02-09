@@ -1,0 +1,18 @@
+CREATE TABLE users (
+  id integer PRIMARY KEY AUTOINCREMENT,
+  username varchar(50),
+  userpassword varchar(10),
+  firstname varchar(50),
+  lastname varchar(50),
+  email varchar(50),
+  dateCreated timestamp DEFAULT current_timestamp
+  );
+
+CREATE TABLE locations (
+  id integer PRIMARY KEY AUTOINCREMENT,
+  locationname varchar(50),
+  cityname varchar(10),
+  longitude float,
+  latitude float,
+  dateCreated timestamp DEFAULT current_timestamp
+  );

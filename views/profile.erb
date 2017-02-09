@@ -1,0 +1,15 @@
+<h1>Profile</h1>
+
+<p><%= @user[:username] %></p>
+<p><%= @user[:firstname] %></p>
+<p><%= @user[:lastname] %></p>
+<p><%= @user[:usertype] %></p>
+<p><%= @user[:email] %></p>
+
+<div id="editbutton">
+  <a href="../update/<%= @user.id %>">Edit User</a>
+</div>
+
+<div id="deleteuser">
+  <a href="../delete/<%= @user.id %>">Delete User</a>
+</div>

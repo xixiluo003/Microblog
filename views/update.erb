@@ -1,0 +1,18 @@
+<h1>update</h1>
+
+<div id="update">
+  <div id="updatebox" class="userIntake">
+    <p>Please update!</p>
+    <form class="logForm" method="post" action="../update">
+      <p>Username: <input type="text" name="username" value="<%= @user.username %>"></p><br>
+      <p>Password: <input type="text" name="password" value="<%= @user.password %>"></p><br>
+      <p>firstname: <input type="text" name="firstname" value="<%= @user.firstname %>"></p><br>
+      <p>lastname: <input type="text" name="lastname" value="<%= @user.lastname %>"></p><br>
+      <p>usertype: <input type="text" name="usertype" value="<%= @user.usertype %>"></p><br>
+      <p>email: <input type="text" name="email" value="<%= @user.email %>"></p><br>
+      <input type="hidden" name="id" value="<%= @user.id %>">
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+</div>

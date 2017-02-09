@@ -1,0 +1,10 @@
+<h1>all_user</h1>
+<div id="showUserMenu">
+  <% @users.each do |show_user| %>
+    <% @show_user = show_user %>
+    <div class="user_list">
+      <a href="/profile/<%= @show_user.id %>"><%= @show_user.username %></a>
+      <% puts "@show_user.inspect: #{@show_user.inspect}" %>
+    </div>
+  <% end %>
+</div>

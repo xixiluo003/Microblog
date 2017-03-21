@@ -1,2 +1,14 @@
 <!-- ======= views/home.erb ======= -->
 <h1>home</h1>
+
+<a href="/new_post">New Post</a>
+
+<p>Recent Posts</p>
+<div id="showPost">
+  <% @posts.each do |show_post| %>
+    <% @show_post = show_post %>
+    <div id="postTitle"><%= @show_post.title %></div>
+    <div id="postContent"><%= @show_post.content %></div>
+    </div>
+  <% end %>
+</div>

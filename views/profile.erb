@@ -6,10 +6,11 @@
 <p><%= @user[:usertype] %></p>
 <p><%= @user[:email] %></p>
 
+<% if @user[:id] == session[:user_id]%>
 <div id="editbutton">
   <a href="../update/<%= @user.id %>">Edit User</a>
 </div>
-
 <div id="deleteuser">
   <a href="../delete/<%= @user.id %>">Delete User</a>
 </div>
+<% end %>

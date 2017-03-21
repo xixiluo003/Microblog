@@ -1,0 +1,10 @@
+<p>Write your new post here</p>
+
+<div id="posts">
+  <form class="newposts" method="post" action="create_post">
+    <p>Title: <input type="text" name="title" value=""></p>
+    <p>Content: <input type="textarea" name="content" value=""></p>
+    <input type="hidden" name="user_id" value="<%= @user.id %>">
+    <input type="submit" value="Submit">
+  </form>
+</div>

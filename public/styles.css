@@ -23,11 +23,13 @@ body {
   background-color: #afc6ea;
 }
 
-.logForm {
-}
-
 #editbutton {
   height: 25px;
   width: 45px;
   border: 2px solid red;
+}
+
+#postTitle {
+  font-weight: bold;
+  font-size: 40px;
 }
